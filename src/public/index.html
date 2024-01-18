@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación</title>
+</head>
+<body>
+    <br><br>
+    <!-- <center> -->
+        <div class="card">
+            <h2 class="card-title">Formulario de votación</h2>
+            <div class="card-body">
+                <form id="formVotacion">
+                    <label for="name" style="margin-right: 30px;">Nombre y Apellido:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <br>
+                    <label for="alias" style="margin-right: 130px;">Alias:</label>
+                    <input type="text" id="alias" name="alias"><br>
+                    <br>
+                    <label for="rut" style="margin-right: 133px;">RUT:</label>
+                    <input type="text" id="rut" name="rut"><br>
+                    <br>
+                    <label for="email" style="margin-right: 125px;">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <br>
+                    <label for="region" style="margin-right: 150px; text-align: left;">Región:</label>
+                    <select id="region" class="form-select" style="width: 300px; display: inline;" name="region">
+                        <!-- Las opciones del select se llenarán dinámicamente con JavaScript -->
+                    </select><br>
+                    <br>
+                    <label for="comuna" style="margin-right: 140px;">Comuna:</label>
+                    <select id="comuna" class="form-select" style="width: 200px; display: inline;" name="comuna">
+                        <!-- Add more region options as needed -->
+                    </select><br>
+                    <br>
+                    <label for="candidate" style="margin-right: 125px;">Candidato:</label>
+                    <select id="candidate" class="form-select" style="width: 200px; display: inline;" name="candidate">
+                        <!-- Las opciones del select se llenarán dinámicamente con jQuery -->
+                    </select><br><br>
+
+                    <label for="howheard" style="margin-right: 20px;">Como se enteró de Nosotros:</label>                    
+                    <input type="checkbox" id="inpWeb" name="vote[]" value="Web" onchange="limitarSeleccion(this)">
+                    <label for="lblWeb" style="margin-right: 20px;">Web</label>
+                    <input type="checkbox" id="inpTV" name="vote[]" value="TV" onchange="limitarSeleccion(this)">
+                    <label for="txtTV" style="margin-right: 10px;">TV</label>
+                    <input type="checkbox" id="inpRedes" name="vote[]" value="Redes" onchange="limitarSeleccion(this)">
+                    <label for="txtRedes" style="margin-right: 10px;">Redes Sociales</label>
+                    <input type="checkbox" id="inpAmigo" name="vote[]" value="Amigo" onchange="limitarSeleccion(this)">
+                    <label for="txtAmigo" style="margin-right: 10px;">Amigo</label><br>
+                    <br><br>
+                    
+                    <button class="btn btn-primary" onclick="capturarValores()">Votar</button>
+                </form>
+            </div>
+        </div>
+    <!-- </center> -->
+</body>
+<script src="../public/js/validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

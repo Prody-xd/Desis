@@ -1,0 +1,19 @@
+{
+    "name": "prueba/desis",
+    "description": "Prueba tecnica DESIS",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "proyecto\\": "src/" 
+        }
+    },
+    "authors": [
+        {
+            "name": "Diego Santana",
+            "email": "81384046+Prody-xd@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {}
+}
