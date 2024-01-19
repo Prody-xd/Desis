@@ -29,4 +29,6 @@ Paso 5: Ejecutar el script de la base de datos. Primero, crear el esquema y lueg
 
 Paso 6: Ejecutar el script para crear el procedimiento almacenado. Adjuntaré la base de datos exportada y un archivo de texto con los comandos CREATE e INSERT (si hay problemas con la creacion de la base de datos ejecutar en el mismo orden el txt de la base de datos).
 
+Paso 7: abrir XAMPP como administrador, click en "Start" de Apache y Mysql, luego dar click en "admin" de apache para abrir el localhost.
+
 PD: El puerto de la base de datos es 3306
